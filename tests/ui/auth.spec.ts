@@ -1,4 +1,4 @@
-import { expect, test } from "../fixtures/base";
+import { expect, test } from "../../fixtures/ui-base";
 
 test("Login with valid credentials", async ({
   page,
