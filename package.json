@@ -1,0 +1,21 @@
+{
+  "name": "experimental-automation-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:trace": "playwright show-trace",
+    "test:stress": "playwright test --repeat-each=10 --workers=10"
+  },
+  "keywords": [],
+  "author": "Raphael Okafor Jr",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0"
+  }
+}
