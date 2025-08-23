@@ -470,8 +470,4 @@ jobs:
 
 **Raphael Okafor Jr**
 
-## License
-
-ISC License
-
 ---
