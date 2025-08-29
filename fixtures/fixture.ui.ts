@@ -21,7 +21,6 @@ export const test = base.extend<Fixtures>({
         headers: Record<string, string>;
         method: string;
         statusText: string;
-        body: string;
         testName: string;
         testFile: string;
         testLine: number;
@@ -34,7 +33,6 @@ export const test = base.extend<Fixtures>({
         const headers = await response.allHeaders();
         const method = response.request().method();
         const statusText = response.statusText();
-        const body = await response.body();
         const testName = testInfo.title;
         const testFile = testInfo.file;
         const testLine = testInfo.line;
@@ -47,7 +45,6 @@ export const test = base.extend<Fixtures>({
             headers,
             method,
             statusText,
-            body: body.toString(),
             testName,
             testFile,
             testLine,

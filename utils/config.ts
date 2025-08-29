@@ -1,6 +1,6 @@
 export class ConfigManager {
   static getBaseUrl(): string {
-    return process.env.BASE_URL || "http://localhost:3000";
+    return process.env.BASE_URL || "https://jsonplaceholder.typicode.com";
   }
 
   static getEnvironment(): string {
@@ -22,7 +22,8 @@ export class ConfigManager {
   }
 
   static getApiEndpoints(): Record<string, string> {
-    const baseUrl = process.env.API_BASE_URL || "http://localhost:3001/api";
+    const baseUrl =
+      process.env.API_BASE_URL || "https://jsonplaceholder.typicode.com";
     return {
       base: baseUrl,
       auth: `${baseUrl}/auth`,
